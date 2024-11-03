@@ -19,7 +19,7 @@ function RegionDetailCard({ region, regionData }) {
         {(searchText &&
           searchText.length > 0  &&
           searchText.map((city, index) => (
-            <Link to={`/api/explore/${city.name}`} key={index}>
+            <Link to={`/api/somalia/explore/${city.name}`} key={index}>
               <Card
                 key={index}
                 className="max-w-sm mt-3"
@@ -42,7 +42,7 @@ function RegionDetailCard({ region, regionData }) {
                 key={index}
                 className="lg:w-96 md:w-80 mb-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
               >
-                <Link to={`/api/explore/${item.name.trim()}`}>
+                <Link to={`/api/somalia/explore/${item.name.trim()}`}>
                   <img
                     className="rounded-t-lg h-48 w-full object-cover"
                     src={item.coverImage}
@@ -50,7 +50,7 @@ function RegionDetailCard({ region, regionData }) {
                   />
                 </Link>
                 <div className="p-5">
-                  <Link to={`/api/explore/${item.name.trim()}`}>
+                  <Link to={`/api/somalia/explore/${item.name.trim()}`}>
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       {item.name}
                     </h5>

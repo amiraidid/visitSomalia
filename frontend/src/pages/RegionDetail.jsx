@@ -12,10 +12,16 @@ function RegionDetail() {
     useEffect(() => {
       const fetchRegionData = async () => {
         try {
-          const response = await axios.get(`http://localhost:8000/api/regions/${region}`)
-          setRegionData(response.data.regions)
+          const response = await axios.get(`/api/regions/${region}`)
+          const responseData = response.data
+          if (responseData && responseData.regions) {
+            setRegionData(responseData.regions)
+          } else {
+            console.log('No data found for region:', region)
+          }
         } catch (error) {
-          console.log(error.message);
+          console.error(error.message)
+          console.error(error.stack)
         }
       }
       fetchRegionData()

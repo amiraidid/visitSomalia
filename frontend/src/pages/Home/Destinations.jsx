@@ -17,7 +17,7 @@ function Destinations() {
             <div className='grid lg:grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1 gap-8 mx-5 content-center'>
                 {
                     destinations.map((city, index) => (
-                        <Link to={`/api/explore/${city.name}`} key={index}><div className='lg:w-96 md:w-80  max-sm:w-full shadow-2xl rounded-lg max-sm:mb-4'>
+                        <Link to={`/api/somalia/explore/${city.name}`} key={index}><div className='lg:w-96 md:w-80  max-sm:w-full shadow-2xl rounded-lg max-sm:mb-4'>
                             <img src={city.image} alt={city.name} className='w-full h-32 object-cover rounded-tr-lg rounded-tl-lg'/>
                             <h1 className='p-3 font-bold text-2xl text-slate-200'>{city.name}</h1>
                             <p className='p-3 text-sm text-white '>{city.text}</p>
@@ -25,7 +25,7 @@ function Destinations() {
                     ))
                 }
             </div>
-            <Link to='/api/explore'><button className='my-4 m-8 py-2 px-4 text-white text-xl bg-blue-700 rounded-lg hover:bg-blue-800'>Explore More Destinations </button></Link>
+            <Link to='/api/somalia/explore'><button className='my-4 m-8 py-2 px-4 text-white text-xl bg-blue-700 rounded-lg hover:bg-blue-800'>Explore More Destinations </button></Link>
         </div>
     )
 }

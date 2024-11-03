@@ -11,7 +11,7 @@ function Hero() {
     const handleSearch = (e) => {
         e.preventDefault();
         if (regions.includes(searchRegion)) {
-            navigate(`/api/regions/${searchRegion}`);
+            navigate(`/api/somalia/regions/${searchRegion}`);
         } else {
             alert('Please Enter Valid State Names');
         }

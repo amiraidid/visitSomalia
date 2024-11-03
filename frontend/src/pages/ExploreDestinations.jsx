@@ -17,7 +17,7 @@ function ExploreDestinations() {
       <div className="grid lg:grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1 gap-8">
         {(searchText && searchText.length > 0  &&
           searchText.map((city, index) => (
-            <Link to={`/api/explore/${city.name}`} key={index}>
+            <Link to={`/api/somalia/explore/${city.name}`} key={index}>
               <Card
                 key={index}
                 className="max-w-sm mt-3"
@@ -35,7 +35,7 @@ function ExploreDestinations() {
           ))) ||
           (cities &&
             cities.map((city, index) => (
-              <Link to={`/api/explore/${city.name}`} key={index}>
+              <Link to={`/api/somalia/explore/${city.name}`} key={index}>
                 <Card
                   key={index}
                   className="max-w-sm mt-3"

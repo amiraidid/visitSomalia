@@ -10,9 +10,9 @@ function AllRoutes() {
 
             <Routes>
                 <Route path="/" element={<Home /> }/>
-                <Route path="/api/regions/:region" element={<RegionDetail />}/>
-                <Route path="/api/explore/:name" element={<SinglePlace />}/>
-                <Route path="/api/explore" element={<ExploreDestinations />}/>
+                <Route path="/api/somalia/regions/:region" element={<RegionDetail />}/>
+                <Route path="/api/somalia/explore/:name" element={<SinglePlace />}/>
+                <Route path="/api/somalia/explore" element={<ExploreDestinations />}/>
             </Routes>
 
         </div>

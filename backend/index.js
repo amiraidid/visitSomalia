@@ -10,14 +10,15 @@ server.use(cors());
 server.use(express.json());
 dotenv.config({ path: "./.env" });
 
-const __dirname = path.resolve();
+const _dirname = path.resolve();
 
 server.use("/api", CityRoutes)
 
 if (process.env.NODE_ENV === "production") {
-  server.use(express.static(path.join(__dirname, "/frontend/dist")));
+  server.use(express.static(path.join(_dirname, "/frontend/dist")));
+
   server.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+      res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
   });
 }
 
