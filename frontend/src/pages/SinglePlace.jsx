@@ -12,7 +12,7 @@ function SinglePlace() {
     const fetchCityInfo = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`http://localhost:8000/api/explore/${name}`);
+        const response = await axios.get(`/api/explore/${name}`);
         setPlaces(response.data.place);
         setLoading(false);
       } catch (error) {}
