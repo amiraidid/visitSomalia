@@ -17,7 +17,7 @@ function RegionDetailCard({ region, regionData }) {
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1 gap-5 mx-16 ">
         {(searchText &&
-          searchText.length > 0 && searchText.region === region &&
+          searchText.length > 0  &&
           searchText.map((city, index) => (
             <Link to={`/api/explore/${city.name}`} key={index}>
               <Card

@@ -14,7 +14,7 @@ export const CityProvider = ({children}) => {
         const fetchData = async() => {
             try {
                 setLoading(true)
-                const response = await axios.get(`/api/explore`)
+                const response = await axios.get(`http://localhost:8000/api/explore`)
                 setCityData(response.data)
                 setLoading(false)
             } catch (error) {

@@ -12,7 +12,7 @@ function SinglePlace() {
     const fetchCityInfo = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`/api/explore/${name}`);
+        const response = await axios.get(`http://localhost:8000/api/explore/${name}`);
         setPlaces(response.data.place);
         setLoading(false);
       } catch (error) {}
@@ -54,11 +54,11 @@ function SinglePlace() {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent"></div>{" "}
             {/* Gradient overlay */}
-            <div className="mx-11 p-8 absolute top-44 left-0 right-0 w-2/3 h- bg-white bg-opacity-80 rounded-lg shadow-lg md:top-28 md:p-6 max-sm:top-16 max-sm:w-3/4 max-sm:p-4">
+            <div className="mx-11 p-8 absolute top-44 left-0 right-0 w-2/3 h- bg-white bg-opacity-80 rounded-lg shadow-lg md:top-28 md:p-6 max-sm:top-16 max-sm:w-10/12 max-sm:p-4">
               <h1 className="text-7xl max-sm:text-4xl text-red-900 font-bold tracking-wider py-4 text-shadow">
                 {places.name}
               </h1>
-              <p className="text-2xl text-gray-700 font-medium py-4 mx-4">
+              <p className="text-2xl max-sm:text-xl text-gray-700 font-medium py-4 mx-4">
                 {places.description}
               </p>
               <h1 className="text-xl text-gray-600 font-medium mx-4">

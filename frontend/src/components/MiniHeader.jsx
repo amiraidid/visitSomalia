@@ -4,9 +4,9 @@ import { SearchCard } from '../components'
 function MiniHeader() {
   return (
     <header>
-        <div className='flex justify-between max-sm:justify-center items-center mt-2 mx-2'>
+        <div className='flex justify-between max-sm:justify-center items-center mt-2 mx-2 max-sm:block'>
             <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="/public/favicon-32x32.png" className="h-8" alt="Flowbite Logo" />
+                <img src="/favicon-32x32.png" className="h-8" alt="" />
                 <span className="self-center text-2xl font-bold uppercase whitespace-nowrap dark:text-white">Somalia</span>
             </Link>
             <SearchCard />

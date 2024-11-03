@@ -9,7 +9,7 @@ function ExploreDestinations() {
   const cities = cityData.cities;
 
   return (
-    <div className="min-h-screen mx-10 my-5">
+    <div className="min-h-screen mx-10 my-5 max-sm:mx-2">
       <MiniHeader />
       <h1 className="text-3xl font-bold text-blue-400 my-5">
         Explore Destinations

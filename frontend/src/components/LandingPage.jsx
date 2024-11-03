@@ -7,6 +7,7 @@ import laasgeel2 from "../assets/laasgeel-2.jpg";
 import liido from "../assets/liido.jpg";
 import Mogadishu from "../assets/Mogadishu.jpg";
 
+
 function LandingPage({ region }) {
   const slides = [
     {
@@ -88,7 +89,7 @@ function LandingPage({ region }) {
             </div>
           ))}
         </div>
-        <button className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 w-fit">
+        <button className="absolute top-[58%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center bg-blue-700 hover:bg-blue-800 font-medium rounded-full text-sm px-4 py-2 w-fit max-sm:mt-3">
           <a href="#exploreRegion">Explore {region}</a>
         </button>
       </div>
